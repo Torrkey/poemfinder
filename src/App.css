@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  background-image: url(/public/images/white_wall_hash.webp);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  font-size: 36px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.viewer{
+  width: 400px;
+  height: 400px;
+  background-color: antiquewhite;
+  outline: 2px solid black;
+  margin: 50px;
+  padding: 20px;
+  overflow-y: auto;
+  display:block;
+  font-family: 'Kumbh', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+  font-size: 22px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.webHeader{
+  font-family: 'Kumbh', sans-serif;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.img{
+  margin: 40px;
+}
+
+.search{
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+#search-bar{
+  width: 250px;
+  height: 25px;
 }
